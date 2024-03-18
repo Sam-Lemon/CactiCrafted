@@ -15,25 +15,28 @@
             <!--want to add shopping basket, in bookmarks, and make all buttons-->
 
 
-    <nav class="navbar navbar-inverse bg-success text-light">
+    <nav class="navbar navbar-expand-lg bg-success text-light">
         <div class="container-fluid">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Cart</a></li>
+          <ul class="nav navbar-nav navbar-right">                
+            <li><button type="button" class="btn btn-success">Log In</button>
+            <a href="#"></a>
+            </li>
+            <li><button type="button" class="btn btn-success">Sign Up</button>
+                <a href="#"></a>
+            </li>
+            <li><button type="button" class="btn btn-success">Cart</button>
+                <a href="#"></a>
+            </li>
           </ul>
         </div>
         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-basket2" viewBox="0 0 16 16">
         <path d="M4 10a1 1 0 0 1 2 0v2a1 1 0 0 1-2 0zm3 0a1 1 0 0 1 2 0v2a1 1 0 0 1-2 0zm3 0a1 1 0 1 1 2 0v2a1 1 0 0 1-2 0z"/>
         <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-.623l-1.844 6.456a.75.75 0 0 1-.722.544H3.69a.75.75 0 0 1-.722-.544L1.123 8H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM2.163 8l1.714 6h8.246l1.714-6z"/>
         </svg>
-
-
     </nav>
 
-    <h1 class="text-center text-light bg-success">CactiCrafted</h1>
-            <!--Add drop down menu [shop succulents] [shop cactus] [soil] [pots] [tools].
-            Different species in shop succ/cac-->
+    <h1 class="text-center bg-light text-success">CactiCrafted</h1>
+
             <!--Make this a banner, put alert on bottom for this month's sale.-->
 
     <div id="banner-succ" class="container-fluid">
@@ -45,7 +48,13 @@
         </div>
     </div>
 
-    <nav class="navbar navbar-expand-lg bg-success">
+            <!--This is supposed to be a drop down bar not a nav bar-->
+            <!--Add drop down menu [shop succulents] [shop cactus] [soil] [pots] [tools].
+            Different species in shop succ/cac-->
+            <!--I dont know why justify content isnt working below-->
+
+
+    <nav class="navbar navbar-expand-lg d-flex justify-content-end bg-success">
         <div class="container-fluid">
             <ul class="nav navbar-nav navbar-right">
                 <li><button type="button" class="btn btn-success">Shop Succulents</button>
@@ -141,39 +150,38 @@
 
 <br><br><br>
 
-    <div class="container-fluid text-center mt-3 fs-4"></div>
+    <div id="class-events" class="container-fluid text-center mt-3 fs-4"></div>
         <div class="row">
-            <div class="col-md-3">
-                <div class="garden-classes">
-                        <!--Vertically center in row-->
-                    <p class="text-center fs-6">Having trouble keeping your succulents and cactus alive? Join us for our monthly gardening club where we trade tips, plants, and camaraderie.</p>
+           
+                <div class="col-md-3">
+                        <div class="garden-classes">
+                                <!--Vertically center in row and format from right-->
+                            <p class="text-center fs-6">Having trouble keeping your succulents and cactus alive? Join us for our monthly gardening club where we trade tips, plants, and camaraderie.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="garden-class-image">
+                            <img src="images/pexels-teona-swift-6912856.jpg"
+                            class="img-fluid"
+                            alt="Two women, one sitting the other leaning over her, in a garden with a small table of plant pots next to them."
+                            width="200">
+                        </div>
                 </div>
-            </div>
-            <div class="col-md-3">
-                <div class="garden-class-image">
-                    <img src="images/pexels-teona-swift-6912856.jpg"
-                    class="img-fluid"
-                    alt="Two women, one sitting the other leaning over her, in a garden with a small table of plant pots next to them."
-                    width="200">
+                <div class="col-md-3">
+                    <div class="calendar-image">
+                        <img src="images/icons8-calendar-100.png" 
+                        class="calendar-icon"
+                        alt="Green calendar icon"
+                        width="250">
+                    </div>
+                    <div class="source-calendar">
+                        <a target="_blank" href="https://icons8.com/icon/67438/calendar">Calendar</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-3">
-                <div class="calendar-image">
-                    <img src="images/icons8-calendar-100.png" 
-                    class="calendar-icon"
-                    alt="Green calendar icon"
-                    width="250">
+                <div class="col-md-3">
+                            <!--Vertically center in row format from left-->
+                        <p>Check out our event calendar, updated monthly. Gardening classes for all ages, parties, and more!</p>
                 </div>
-                <div class="source-calendar">
-                    <a target="_blank" href="https://icons8.com/icon/67438/calendar">Calendar</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="garden-events">
-                        <!--Vertically center in row-->
-                    <p>Check out our event calendar, updated monthly. Gardening classes for all ages, parties, and more!</p>
-                </div>
-
             </div>
         </div>
     </div>  
