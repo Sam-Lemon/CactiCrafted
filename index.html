@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" 
+        href="./node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+
+<body class="bg-success-subtle">
+
+            <!--Why are these blue? I want to make them all buttons and put on the right.
+            Add badge to cart if possible?-->
+            <!--want to add shopping basket, in bookmarks, and make all buttons-->
+
+
+    <nav class="navbar navbar-inverse bg-success text-light">
+        <div class="container-fluid">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Cart</a></li>
+          </ul>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-basket2" viewBox="0 0 16 16">
+        <path d="M4 10a1 1 0 0 1 2 0v2a1 1 0 0 1-2 0zm3 0a1 1 0 0 1 2 0v2a1 1 0 0 1-2 0zm3 0a1 1 0 1 1 2 0v2a1 1 0 0 1-2 0z"/>
+        <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-.623l-1.844 6.456a.75.75 0 0 1-.722.544H3.69a.75.75 0 0 1-.722-.544L1.123 8H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM2.163 8l1.714 6h8.246l1.714-6z"/>
+        </svg>
+
+
+    </nav>
+
+    <h1 class="text-center text-light bg-success">CactiCrafted</h1>
+            <!--Add drop down menu [shop succulents] [shop cactus] [soil] [pots] [tools].
+            Different species in shop succ/cac-->
+            <!--Make this a banner, put alert on bottom for this month's sale.-->
+
+    <div id="banner-succ" class="container-fluid">
+        <div class="overylay-y-hidden">
+            <img src="images/banner-succs.jpeg"
+                class="img-fluid" 
+                alt="A myriad of succulents growing together in the ground."
+                width="1600">
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg bg-success">
+        <div class="container-fluid">
+            <ul class="nav navbar-nav navbar-right">
+                <li><button type="button" class="btn btn-success">Shop Succulents</button>
+                    <a href="#"></a>
+                </li>
+                <li><button type="button" class="btn btn-success">Shop Cactus</button>
+                    <a href="#"></a>
+                </li>
+                <li><button type="button" class="btn btn-success">Soil</button>
+                    <a href="#"></a>
+                </li>
+                <li><button type="button" class="btn btn-success">Pots</button>
+                    <a href="#"></a>
+                </li>
+                <li><button type="button" class="btn btn-success">Tools</button>
+                    <a href="#"></a>
+                </li>
+
+            
+            
+
+            <!--want to add shopping basket, in bookmarks, and make all buttons-->
+          </ul>
+        </div>
+    </nav>
+
+
+<br><br><br>
+
+    <h2 class="text-center mb-3">Our Favorites</h2>
+
+    <div class="container-fluid text-center mt-3 fs-7">
+        <div class="row">
+                <!--RESIZE to match rest of photos-->
+<!--
+            <div class="col-md">
+                <div id="tile-1" class="tile bg-success-subtle"">
+                    <div class="overflow-y-hidden">
+                        <img src="images/euphorbia-mammillaris.jpg" 
+                        class="img-fluid"
+                        alt="Euphorbia mammillaris"
+                        width="350"
+                        />
+                    </div>
+                    <div class="tile-body">
+                        <h4 class="tile-name">Euphorbia mammillaris</h4>
+                        <a href="#" class="btn btn-link">Add to Cart</a>
+                    </div>
+
+                </div>
+            </div>
+-->
+            <div class="col-md-4">
+                <div id="tile-2" class="tile bg-success-subtle">
+                    <img src="images/gasteria-batesiana-.jpg" 
+                    class="img-fluid"
+                    alt="Gasteria batesiana"
+                    width="350"
+                    />
+                    <div class="tile-body">
+                        <h4 class="tile-name">Gasteria batesiana</h4>
+                        <a href="#" class="btn btn-link">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div id="tile-3" class="tile  bg-success-subtle">
+                    <img src="images/echeveria-setosa.jpg" 
+                    class="img-fluid"
+                    alt="Echeveria Setosa"
+                    width="350"
+                    />
+                    <div class="tile-body">
+                        <h4 class="tile-name">Echeveria setosa</h4>
+                        <a href="#" class="btn btn-link">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div id="tile-4" class="tile bg-success-subtle">
+                    <img src="images/haworthia-attenuata.jpg" 
+                    class="img-fluid"
+                    alt="Haworthia attenuata"
+                    width="350"
+                    />
+                    <div class="tile-body">
+                        <h4 class="tile-name">Haworthia attenuata</h4>
+                        <a href="#" class="btn btn-link">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<br><br><br>
+
+    <div class="container-fluid text-center mt-3 fs-4"></div>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="garden-classes">
+                        <!--Vertically center in row-->
+                    <p class="text-center fs-6">Having trouble keeping your succulents and cactus alive? Join us for our monthly gardening club where we trade tips, plants, and camaraderie.</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="garden-class-image">
+                    <img src="images/pexels-teona-swift-6912856.jpg"
+                    class="img-fluid"
+                    alt="Two women, one sitting the other leaning over her, in a garden with a small table of plant pots next to them."
+                    width="200">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="calendar-image">
+                    <img src="images/icons8-calendar-100.png" 
+                    class="calendar-icon"
+                    alt="Green calendar icon"
+                    width="250">
+                </div>
+                <div class="source-calendar">
+                    <a target="_blank" href="https://icons8.com/icon/67438/calendar">Calendar</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="garden-events">
+                        <!--Vertically center in row-->
+                    <p>Check out our event calendar, updated monthly. Gardening classes for all ages, parties, and more!</p>
+                </div>
+
+            </div>
+        </div>
+    </div>  
+        
+
+
+
+
+
+
+
+
+
+
+
+     
+
+
+
+
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    
+</body>
+</html>
