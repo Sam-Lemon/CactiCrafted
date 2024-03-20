@@ -12,13 +12,10 @@
 
 <body class="bg-success-subtle">
 
-            <!--I want to make them all buttons and put on the right.
-            Add badge to cart if possible?-->
-            <!--want to add shopping basket, in bookmarks, and make all buttons-->
-
-
-    <nav class="navbar navbar-expand-lg bg-success text-light">
-        <div class="container-fluid">
+            <!--nav bar contents over to left enough that badge fits on page-->
+<!--Top nav bar start-->
+    <nav class="navbar navbar-expand bg-success text-light">
+        <div class="container-fluid d-flex justify-content-end ml-1 mr-0">
           <ul class="nav navbar-nav navbar-right">                
             <li><button type="button" class="btn btn-success">Log In</button>
             <a href="#"></a>
@@ -26,16 +23,25 @@
             <li><button type="button" class="btn btn-success">Sign Up</button>
                 <a href="#"></a>
             </li>
-            <li><button type="button" class="btn btn-success">Cart</button>
-                <a href="#"></a>
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-basket2" viewBox="0 0 16 16">
+                <path d="M4 10a1 1 0 0 1 2 0v2a1 1 0 0 1-2 0zm3 0a1 1 0 0 1 2 0v2a1 1 0 0 1-2 0zm3 0a1 1 0 1 1 2 0v2a1 1 0 0 1-2 0z"/>
+                <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-.623l-1.844 6.456a.75.75 0 0 1-.722.544H3.69a.75.75 0 0 1-.722-.544L1.123 8H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM2.163 8l1.714 6h8.246l1.714-6z"/>
+                </svg>
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary">
+                    10
+                    <span class="visually-hidden"></span>
+                </span>
+      
             </li>
           </ul>
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-basket2" viewBox="0 0 16 16">
-        <path d="M4 10a1 1 0 0 1 2 0v2a1 1 0 0 1-2 0zm3 0a1 1 0 0 1 2 0v2a1 1 0 0 1-2 0zm3 0a1 1 0 1 1 2 0v2a1 1 0 0 1-2 0z"/>
-        <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-.623l-1.844 6.456a.75.75 0 0 1-.722.544H3.69a.75.75 0 0 1-.722-.544L1.123 8H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM2.163 8l1.714 6h8.246l1.714-6z"/>
-        </svg>
+        <div class="cart-btn">
+        </div>
+
+
     </nav>
+<!--Top nav bar end-->
+
 
     <h1 class="text-center bg-light text-success">CactiCrafted</h1>
 
