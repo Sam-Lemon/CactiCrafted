@@ -10,24 +10,29 @@
     />
 </head>
 
-<body class="bg-success-subtle">
+<body bg-success-subtle>
 
-            <!--nav bar contents over to left enough that badge fits on page-->
+
+
+
+
+                     <!--nav bar contents over to left enough that badge fits on page-->
 <!--Top nav bar start-->
     <nav id="top-nav-bar" class="navbar navbar-expand bg-success text-light">
         <div class="container-fluid justify-content-end">
-          <ul class="nav navbar-nav navbar-right">                
-            <li><button type="button" class="btn btn-success">Log In</button>
-                <a href="#"></a>
-            </li>
-            <li><button type="button" class="btn btn-success">Sign Up</button>
-                <a href="#"></a>
+          <ul class="nav navbar-nav navbar-right">   
+
+                    <!--Change text color. Currently set to light, but showing blue-->    
+
+            <li><button type="button" class="btn btn-success text-decoration-none text-light">
+                <a href="login-signup.html">Log In/Sign Up</a></button>
+            </a>
             </li>
             <li><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-basket2" viewBox="0 0 16 16">
                 <path d="M4 10a1 1 0 0 1 2 0v2a1 1 0 0 1-2 0zm3 0a1 1 0 0 1 2 0v2a1 1 0 0 1-2 0zm3 0a1 1 0 1 1 2 0v2a1 1 0 0 1-2 0z"/>
                 <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-.623l-1.844 6.456a.75.75 0 0 1-.722.544H3.69a.75.75 0 0 1-.722-.544L1.123 8H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM2.163 8l1.714 6h8.246l1.714-6z"/>
                 </svg>
-                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary">
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill">
                     10
                     <span class="visually-hidden"></span>
                 </span>
@@ -38,23 +43,21 @@
 <!--Top nav bar end-->
 
 <!--Company name start-->
-            <!--Change font-->
-            <!--Move left image to end of col, align center-->
-    <div class="brand-banner bg-success-subtle">
+    <div class="brand-banner bg-success-subtle bg-white">
         <div class="row ">
-            <div class="col-md-4">
+            <div class="col-md-4 d-flex justify-content-end">
                 <img src="images/cacti.png" 
-                class="d-flex justify-content-end"
                 alt="Three line art small cacti in tiny pots"
                 width="200"
                 height="auto"
                 />
             </div>
+
                     <!--Prettier font, align center-->
-            <div class="col-md-4">
+            <div class="col-md-4 align-items-center">
                  <h1 id="brand-title" class="text-center text-success">CactiCrafted</h1>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 d-flex justify-content-left">
                 <img src="images/cacti.png" 
                 class=""
                 alt="Three line art small cacti in tiny pots"
@@ -66,21 +69,26 @@
     </div>
 <!--Company name end-->
 
-            <!--Make this a banner, put alert on bottom for this month's sale.-->
+                    <!--Make this a banner, put alert on bottom for this month's sale.-->
 
-    <div id="banner-succ" class="container-fluid">
-        <div class="overylay-y-hidden">
+<!--Succulent banner start-->
+    <div class="succ-banner">
+        <div class="container-fluid overylay-y-hidden">
             <img src="images/banner-succs.jpeg"
                 class="img-fluid" 
                 alt="A myriad of succulents growing together in the ground."
                 width="1600">
         </div>
+        <div class="alert alert-warning" role="alert">
+            Sitewide SALE 20% off EVERYTHING
+        </div>
     </div>
+<!--Succulent banner end-->
 
 
 <!--mid nav bar/drop down menu-start-->
 
-            <!--Why secondary menus not hidden-->
+                    <!--Why secondary menus not hidden-->
 
     <nav class="navbar navbar-expand bg-success">
         <div class="container-fluid justify-content-center">
@@ -135,7 +143,6 @@
                             </ul>
                     </div>
                 </div>
-            <!--want to add shopping basket, in bookmarks, and make all buttons-->
         </div>
     </nav>
 <!--mid nav bar/drop down menu-end-->
@@ -160,8 +167,8 @@
                     width="350"
                     />
                     <div class="tile-body">
-                        <h4 class="tile-name">Gasteria batesiana</h4>
-                        <a href="#" class="btn btn-link">Add to Cart</a>
+                        <a href="#" class="btn btn-solid  fs-12">Gasteria batesiana
+                        </a>
                     </div>
                 </div>
             </div>
