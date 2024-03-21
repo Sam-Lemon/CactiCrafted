@@ -10,7 +10,7 @@
     />
 </head>
 
-<body bg-success-subtle>
+<body class="bg-success-subtle">
 
 
 
@@ -87,76 +87,70 @@
 
 
 <!--mid nav bar/drop down menu-start-->
+    <div class="dropdown bg-success">
+        <button class="btn btn-success text-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+        Shop Succulents
+        </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#">Agave</a></li>
+            <li><a class="dropdown-item" href="#">Cotyledon</a></li>
+            <li><a class="dropdown-item" href="#">Crassula</a></li>
+            <li><a class="dropdown-item" href="#">Echeveria</a></li>
+            <li><a class="dropdown-item" href="#">Gasteria</a></li>
+            <li><a class="dropdown-item" href="#">Haworthia</a></li>
+            <li><a class="dropdown-item" href="#">Lithop</a></li>
+            <li><a class="dropdown-item" href="#">Sempervivum</a></li>
+            <li><a class="dropdown-item" href="#">Sedum</a></li>
+        </ul>
+        <button class="btn btn-success text-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            Shop Cactus
+        </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Cereus</a></li>
+                <li><a class="dropdown-item" href="#">Copiapoa</a></li>
+                <li><a class="dropdown-item" href="#">Gymnocalycium</a></li>
+                <li><a class="dropdown-item" href="#">Mammillaria</a></li>
+                <li><a class="dropdown-item" href="#">Parodia</a></li>
+        </ul>
+        <button class="btn btn-success text-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            Soil
+        </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Garden Soil</a></li>
+                <li><a class="dropdown-item" href="#">Cactus Soil</a></li>
+                <li><a class="dropdown-item" href="#">Soil Amendments</a></li>
+        </ul>
+        <button class="btn btn-success text-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            Pots
+        </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Ceramic</a></li>
+                <li><a class="dropdown-item" href="#">Plastic</a></li>
+                <li><a class="dropdown-item" href="#">Teracotta</a></li>
+                <li><a class="dropdown-item" href="#">Large Planters</a></li>
+        </ul>
+        <button class="btn btn-success text-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            Tools
+        </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Hand Tools</a></li>
+                <li><a class="dropdown-item" href="#">Specialty Tools</a></li>
+        </ul>
+    </div>
+                 
 
-                    <!--Why secondary menus not hidden-->
-
-    <nav class="navbar navbar-expand bg-success">
-        <div class="container-fluid justify-content-center">
-               <div class="btn-grp">
-                    <div class="btn-succ">
-                        <button type="button" class="btn btn-success dropdown-toggle bg-success-subtle" data-bs-toggle:"dropdown" aria-expanded="false">
-                            Shop Succulents</button>
-                            <ul class="dropdown-menu-succ" aria-labelledby="dropdownMenu">
-                                <li><a class="dropdown-item" type="button" href="#">Agave</a></li>
-                                <li><a class="dropdown-item" type="button" href="#">Cotyledon</a></li>
-                                <li><a class="dropdown-item" type="button" href="#">Crassula</a></li>
-                                <li><a class="dropdown-item" type="button" href="#">Echeveria</a></li>
-                                <li><a class="dropdown-item" type="button" href="#">Gasteria</a></li>
-                                <li><a class="dropdown-item" type="button" href="#">Haworthia</a></li>
-                                <li><a class="dropdown-item" type="button" href="#">Lithop</a></li>
-                                <li><a class="dropdown-item" type="button" href="#">Sempervivum</a></li>
-                                <li><a class="dropdown-item" type="button" href="#">Sedum</a></li>
-                            </ul>
-                    </div>
-                    <div class="btn-cactus">
-                        <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle:"dropdown" aria-expanded="false">Shop Cactus</button>
-                            <ul class="dropdown-menu-cactus">
-                                <li><a class="dropdown-item" type="button" href="#">Cereus</a></li>
-                                <li><a class="dropdown-item" type="button" href="#">Copiapoa</a></li>
-                                <li><a class="dropdown-item" type="button" href="#">Gymnocalycium</a></li>
-                                <li><a class="dropdown-item" type="button" href="#">Mammillaria</a></li>
-                                <li><a class="dropdown-item" type="button" href="#">Parodia</a></li>
-                            </ul>
-                    </div>
-                    <div class="btn-soil">
-                        <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle:"dropdown" aria-expanded="false">Soil</button>
-                            <ul class="dropdown-menu-soil">
-                                <li><a class="dropdown-item" type="button" href="#">Garden Soil</a></li>
-                                <li><a class="dropdown-item" type="button" href="#">Cactus Soil</a></li>
-                                <li><a class="dropdown-item" type="button" href="#">Soil Amendments</a></li>
-                            </ul>
-                    </div>
-                    <div class="btn-pots">
-                        <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle:"dropdown" aria-expanded="false">Pots</button>
-                            <ul class="dropdown-menu-pots">
-                                <li><a class="dropdown-item" type="button" href="#">Ceramic Pots</a></li>
-                                <li><a class="dropdown-item" type="button" href="#">Plastic Pots</a></li>
-                                <li><a class="dropdown-item" type="button" href="#">Terracotta Pots</a></li>
-                                <li><a class="dropdown-item" type="button" href="#">Large Planters</a></li>
-                            </ul>
-                    </div>
-                    <div class="btn-tools">
-                        <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle:"dropdown" aria-expanded="false">Tools</button>
-                            <ul class="dropdown-menu-tools">
-                                <li><a class="dropdown-item" type="button" href="#">Hand Tools</a></li>
-                                <li><a class="dropdown-item" type="button" href="#">Specialty Tools</a></li>
-                            </ul>
-                    </div>
-                </div>
-        </div>
-    </nav>
 <!--mid nav bar/drop down menu-end-->
 
 
 <br><br><br>
 
-    <h2 class="text-center mb-3">Our Favorites</h2>
-
     <!--Plant photo cards w/overlay-start-->
+
+    <h2 class="text-center mb-4">Our Favorites</h2>
 
     <!--I want to pull the .tile-name up onto the picture in an overlay (white or light grey) along the bottom when moused over
     and change the btn-links to not be underlined and change their font color-->
-    <div class="container-fluid text-center mt-3 fs-7">
+    <div class="container-fluid bg-secondary text-center mt-3 fs-7">
         <div class="row">
             <!--Plant 1 start-->
             <div class="col-md-4">
@@ -167,8 +161,8 @@
                     width="350"
                     />
                     <div class="tile-body">
-                        <a href="#" class="btn btn-solid  fs-12">Gasteria batesiana
-                        </a>
+                        <h4 class="tile-name">Gasteria batesiana</h4>
+                        <a href="#" class="btn btn-solid bg-success text-light">Add to Cart</a>
                     </div>
                 </div>
             </div>
@@ -183,7 +177,7 @@
                     />
                     <div class="tile-body">
                         <h4 class="tile-name">Echeveria setosa</h4>
-                        <a href="#" class="btn btn-link">Add to Cart</a>
+                        <a href="#" class="btn btn-solid bg-success text-light">Add to Cart</a>
                     </div>
                 </div>
             </div>
@@ -198,7 +192,7 @@
                     />
                     <div class="tile-body">
                         <h4 class="tile-name">Haworthia attenuata</h4>
-                        <a href="#" class="btn btn-link">Add to Cart</a>
+                        <a href="#" class="btn btn-solid bg-success text-light">Add to Cart</a>
                     </div>
                 </div>
             </div>
@@ -210,12 +204,12 @@
 <br><br><br>
 
 <!--Classes and events start-->
-    <div id="class-events" class="container-fluid text-center mt-3 fs-4"></div>
-        <div class="row">
+    <div id="class-events" class="container-fluid"></div>
+        <div class="row bg-info">
                 <div class="col-md-3">
-                    <div class="garden-classes">
+                    <div class="garden-class">
                             <!--Vertically center in row and format from right-->
-                        <p class="text-center fs-6">Having trouble keeping your succulents and cactus alive? Join us for our monthly gardening club where we trade tips, plants, and camaraderie.</p>
+                            <p class="text-right">Having trouble keeping your succulents and cactus alive? Join us for our monthly gardening club where we trade tips, plants, and camaraderie.</p>
                     </div>
                 </div>
                 <div class="col-md-3">
@@ -239,7 +233,10 @@
                 </div>
                 <div class="col-md-3">
                             <!--Vertically center in row format from left-->
-                        <p>Check out our event calendar, updated monthly. Gardening classes for all ages, parties, and more!</p>
+                    <div class="garden-events">
+                        <p class="text-left">Check out our event calendar, updated monthly. Gardening classes for all ages, parties, and more!</p><br>
+                        <p class="text-left">Hours: <br> M-F 11am-9pm <br> 4920 W Treemont St. <br> Mainevill, CO</p>
+                    </div>
                 </div>
             </div>
 <!--Classes and events end-->
@@ -255,16 +252,10 @@
 
 
 
-
-
      
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 
 
-
-
-
-    <script src="node_modules/jquery/dist/jquery.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
-    
 </body>
 </html>
