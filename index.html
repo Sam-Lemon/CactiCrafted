@@ -5,41 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
       rel="stylesheet"
-    />
+      href="node_modules/bootstrap/dist/css/bootstrap.css">
+    
 </head>
 
 <body class="bg-success-subtle">
 
-
-
-
-
-                     <!--nav bar contents over to left enough that badge fits on page-->
+    
+      
 <!--Top nav bar start-->
-    <nav id="top-nav-bar" class="navbar navbar-expand bg-success text-light">
-        <div class="container-fluid justify-content-end">
-          <ul class="nav navbar-nav navbar-right">   
+    <div class="row bg-success">
+        <div class="col-md-4"></div>
+        <div class="col-md-4"></div>
 
-                    <!--Change text color. Currently set to light, but showing blue-->    
+                        <!--nav bar contents over to left enough that badge fits on page-->
 
-            <li><button type="button" class="btn btn-success text-decoration-none text-light">
-                <a href="login-signup.html">Log In/Sign Up</a></button>
-            </a>
-            </li>
-            <li><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-basket2" viewBox="0 0 16 16">
-                <path d="M4 10a1 1 0 0 1 2 0v2a1 1 0 0 1-2 0zm3 0a1 1 0 0 1 2 0v2a1 1 0 0 1-2 0zm3 0a1 1 0 1 1 2 0v2a1 1 0 0 1-2 0z"/>
-                <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-.623l-1.844 6.456a.75.75 0 0 1-.722.544H3.69a.75.75 0 0 1-.722-.544L1.123 8H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM2.163 8l1.714 6h8.246l1.714-6z"/>
-                </svg>
-                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill">
-                    10
-                    <span class="visually-hidden"></span>
-                </span>
-            </li>
-          </ul>
+        <div class="col-md-4 bg-success">
+            <nav id="top-nav-bar" class="navbar navbar-expand text-light">
+    <!--Login/Cart buttons start-->
+
+                <div class="container-fluid justify-content-around">
+                    <ul class="nav navbar-nav navbar-right">   
+
+                                <!--Change text color. Currently set to light, but showing blue. Put some space between the login button and cart.--> 
+
+                        <li>
+                            <button type="button" class="btn btn-outline-light bg-success">
+                            <a href="login-signup.html">Log In/Sign Up</a></button>
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-basket2" viewBox="0 0 16 16">
+                            <path d="M4 10a1 1 0 0 1 2 0v2a1 1 0 0 1-2 0zm3 0a1 1 0 0 1 2 0v2a1 1 0 0 1-2 0zm3 0a1 1 0 1 1 2 0v2a1 1 0 0 1-2 0z"/>
+                            <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-.623l-1.844 6.456a.75.75 0 0 1-.722.544H3.69a.75.75 0 0 1-.722-.544L1.123 8H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM2.163 8l1.714 6h8.246l1.714-6z"/>
+                            </svg>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </div>
-    </nav>
+    <!--Login/Cart buttons end-->
+
+    </div>
 <!--Top nav bar end-->
 
 <!--Company name start-->
@@ -79,7 +86,7 @@
                 alt="A myriad of succulents growing together in the ground."
                 width="1600">
         </div>
-        <div class="alert alert-warning" role="alert">
+        <div class="alert alert-warning text-center fs-5" role="alert">
             Sitewide SALE 20% off EVERYTHING
         </div>
     </div>
@@ -150,7 +157,7 @@
 
     <!--I want to pull the .tile-name up onto the picture in an overlay (white or light grey) along the bottom when moused over
     and change the btn-links to not be underlined and change their font color-->
-    <div class="container-fluid bg-secondary text-center mt-3 fs-7">
+    <div class="container-fluid bg-success-subtle text-center mt-3 fs-7">
         <div class="row">
             <!--Plant 1 start-->
             <div class="col-md-4">
@@ -204,58 +211,53 @@
 <br><br><br>
 
 <!--Classes and events start-->
-    <div id="class-events" class="container-fluid"></div>
-        <div class="row bg-info">
-                <div class="col-md-3">
-                    <div class="garden-class">
-                            <!--Vertically center in row and format from right-->
-                            <p class="text-right">Having trouble keeping your succulents and cactus alive? Join us for our monthly gardening club where we trade tips, plants, and camaraderie.</p>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="garden-class-image">
-                        <img src="images/pexels-teona-swift-6912856.jpg"
-                        class="img-fluid"
-                        alt="Two women, one sitting the other leaning over her, in a garden with a small table of plant pots next to them."
-                        width="200">
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="calendar-image">
-                        <img src="images/icons8-calendar-100.png" 
-                        class="calendar-icon"
-                        alt="Green calendar icon"
-                        width="250">
-                    </div>
-                    <div class="source-calendar">
-                        <a target="_blank" href="https://icons8.com/icon/67438/calendar">Calendar</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                            <!--Vertically center in row format from left-->
-                    <div class="garden-events">
-                        <p class="text-left">Check out our event calendar, updated monthly. Gardening classes for all ages, parties, and more!</p><br>
-                        <p class="text-left">Hours: <br> M-F 11am-9pm <br> 4920 W Treemont St. <br> Mainevill, CO</p>
-                    </div>
+    <div id="class-events" class="container-fluid">
+        <div class="row bg-success-subtle">
+            <div class="col-md-3 d-flex align-items-center">
+                <div class="garden-class">
+                        <!--Vertically center in row and format from right-->
+                        <p class="text-end">Having trouble keeping your succulents and cactus alive? Join us for our monthly gardening club where we trade tips, plants, and camaraderie.</p>
                 </div>
             </div>
-<!--Classes and events end-->
+            <div class="col-md-3">
+                <div class="garden-class-image">
+                    <img src="images/pexels-teona-swift-6912856.jpg"
+                    class="img-fluid"
+                    alt="Two women, one sitting the other leaning over her, in a garden with a small table of plant pots next to them."
+                    width="200">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="calendar-image">
+                    <img src="images/icons8-calendar-100.png" 
+                    class="calendar-icon"
+                    alt="Green calendar icon"
+                    width="250">
+                </div>
+                <div class="source-calendar">
+                    <a target="_blank" href="https://icons8.com/icon/67438/calendar">Calendar</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+                </div>
+            </div>
+            <div class="col-md-3 d-flex align-items-center">
+                        <!--Vertically center in row format from left-->
+                <div class="garden-events d-flex align-items-center">
+                    <p class="text-start">Check out our event calendar, updated monthly. Gardening classes for all ages, parties, and more!<br><br>
+                    Hours: <br> M-F 11am-9pm <br> 4920 W Treemont St. <br> Mainevill, CO</p>
+                </div>
+            </div>
         </div>
+    </div>
+<!--Classes and events end-->
+
     </div>  
         
 
 
 
-
-
-
-
-
-
      
-<script src="node_modules/jquery/dist/jquery.js"></script>
-<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
-
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/css/bootstrap-grid.css"></script>
+    
 
 </body>
 </html>
