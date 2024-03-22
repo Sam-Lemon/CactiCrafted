@@ -13,25 +13,29 @@
 <body class="bg-success-subtle">
 
 
-<!--Here at the top of the page I changed the background of the page to success-subtle. I also have a navbar with a register button that links to my second page, 
-    a sign-in button for this project, and a shopping basket icon. I used a nav bar to create this element instead of just using buttons so that assistive
-    technology can identify it supplying navigation more easily. -->
+<!--Here at the top of the page I linked my bootstrap stylesheet in the head element and I changed the background of the page to success-subtle. 
+I also have a navbar with a register button that links to my second page, a sign-in button, and a shopping basket icon. I used a navbar to create 
+this element instead of just using buttons so that assistive technology can identify it as navigation. 
+    -row-reverse
+    -navbar-collapse
+    -container vs container-fluid (fluid makes element fit the width of the viewport)
+The basket is a SVG file (Scalable Vector Graphics file) that I added into a button.-->
 
 
     <section class="top-nav-bar">
-        <nav class="navbar navbar-expand-md fixed-top bg-success navbar-light">
+        <nav class="navbar navbar-expand bg-success navbar-light">
             <div class="container-fluid d-flex flex-row-reverse">
                 <div class="collapse navbar-collapse">
                     <ul class="navbar-nav ms-auto align-items-center">
-                        <li class="nav-item ms-3">
+                        <li class="nav-item">
                             <a class="btn btn-success" role="button" href="registration.html" >
                                 Register</a>
                         </li>
-                        <li class="nav-item ms-3">
+                        <li class="nav-item">
                             <a class="btn btn-success" role="button" href="#">
                                 Sign in</a>
                         </li>
-                        <li class="nav-item ms-3">
+                        <li class="nav-item">
                             <a class="btn btn-success" role="button" href="#">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-basket" viewBox="0 0 16 16">
                                     <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172zM2 9v4.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9zM1 7v1h14V7zm3 3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 4 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 6 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 8 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5"/>
@@ -45,26 +49,33 @@
         </nav>
     </section>
 
+
+<!--In the .succ-banner section I just added an image to break the page up and used image-fluid to make it responsive. I'm not sure it doesn't fill 100%
+of the viewport when it's less than 500px.-->
+
+
+
     <section class="succ-banner">
-        <div class="brand-banner bg-success-subtle bg-white">
+        <div class="banner bg-success-subtle bg-white">
             <div class="backgroundimage">
                 <img src="images/banner-succs.jpeg"
                         class="img-fluid" 
                         alt="A myriad of succulents growing together in the ground."
-                        width="1600">
+                        width="100%">
             </div>
         </div>
         <h1 id="brand-title" class="text-center text-success fst-italic mt-3 mb-3">CactiCrafted</h1>
     </section>
 
 
-<!--THIS IS BROKEN AND I DONT KNOW WHY, I copied the format exactly from getbootstrap.com dropdowns!!!!!!-->
+<!--This is a dropdown menu. I centered the content by changing the display to flex and using justify-content-center. I separated each dropdown button
+into it's own div that includes the main button (ex: Shop Succulents) and the dropdown options below it.-->
 
 
     <section class="mid-nav-bar-dropdown">
         <div class="dropdown bg-success d-flex justify-content-center">
             <div class="btn-group">
-                <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <button class="btn btn-success" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                     Shop Succulents
                 </button>
                 <ul class="dropdown-menu bg-secondary-subtle" aria-labelledby="dropdownMenuButton1">
@@ -80,7 +91,7 @@
                 </ul>
             </div>
             <div class="btn-group">
-                <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                <button class="btn btn-success" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
                     Shop Cactus
                 </button>
                 <ul class="dropdown-menu bg-secondary-subtle" aria-labelledby="dropdownMenuButton2">
@@ -92,7 +103,7 @@
                 </ul>
             </div>
             <div class="btn-group">
-                <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
+                <button class="btn btn-success" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
                     Soil
                 </button>
                 <ul class="dropdown-menu bg-secondary-subtle" aria-labelledby="dropdownMenuButton3">
@@ -102,7 +113,7 @@
                 </ul>
             </div>
             <div class="btn-group">
-                <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton4" data-bs-toggle="dropdown" aria-expanded="false">
+                <button class="btn btn-success" type="button" id="dropdownMenuButton4" data-bs-toggle="dropdown" aria-expanded="false">
                     Pots
                 </button>
                 <ul class="dropdown-menu bg-secondary-subtle" aria-labelledby="dropdownMenuButton4">
@@ -113,7 +124,7 @@
                 </ul>
             </div>
             <div class="btn-group">
-                <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton5" data-bs-toggle="dropdown" aria-expanded="false">
+                <button class="btn btn-success" type="button" id="dropdownMenuButton5" data-bs-toggle="dropdown" aria-expanded="false">
                     Tools
                 </button>
                 <ul class="dropdown-menu bg-secondary-subtle" aria-labelledby="dropdownMenuButton5">
@@ -203,7 +214,6 @@ and used text-end and text-start to line them up against the images.-->
                         width="200">
                     </div>
                 </div>
-            
                 <div class="col-md-3">
                     <div class="calendar-image">
                         <img src="images/icons8-calendar-100.png" 
@@ -227,7 +237,7 @@ and used text-end and text-start to line them up against the images.-->
    
 <!--These scripts tell the computer what to download in order to apply Bootstrap and jquery to the file.-->
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
