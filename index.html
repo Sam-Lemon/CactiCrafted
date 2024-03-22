@@ -200,7 +200,7 @@ and used text-end and text-start to line them up against the images.-->
 
 
     <section class="classes&events">
-        <div class="container-fluid row bg-success-subtle">
+        <div class="container-fluid row bg-success-subtle mb-5">
                 <div class="col-md-3 d-flex align-items-center">
                     <div class="garden-class">
                             <p class="text-end">Having trouble keeping your succulents and cactus alive? Join us for our monthly gardening club where we trade tips, plants, and camaraderie.</p>
@@ -227,12 +227,68 @@ and used text-end and text-start to line them up against the images.-->
                 </div>
                 <div class="col-md-3 d-flex align-items-center">
                     <div class="garden-events d-flex align-items-center">
-                        <p class="text-start">Check out our event calendar, updated monthly. Gardening classes for all ages, parties, and more!<br><br>
+                        <p class="text-start">Check out our full event calendar, updated monthly. Gardening classes for all ages, parties, and more!<br><br>
                         Hours: <br> M-F 11am-9pm <br> 4920 W Treemont St. <br> Mainevill, CO</p>
                     </div>
                 </div>
         </div>
     </section>
+
+<hr>
+
+
+<!--I decided to make a table showcasing events happening in the next month at the store. I  used .container-fluid to make
+the table take up the width of the viewport and centered my .h2 using text-center. I striped the rows of my table for
+easier reading, and colored them in the same scheme as everywhere else. scope="col" specifies that these table headers
+are headers for columns. You could also specify them as headers for rows or groups of columns/rows.-->
+
+
+    <section class="info-table">
+        <div class="container-fluid text-center">
+            <h2>Upcoming Events</h2>
+        </div>
+        <div class="container-fluid">
+          <table class="table table-success table-striped w-100 ts-1">
+            <thead>
+              <tr>
+                <th scope="col">Date</th>
+                <th scope="col">Event</th>
+                <th scope="col">Description</th>
+                <th scope="col">Ages</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>April 3rd 7pm</td>
+                <td>Spring Has Sprung</td>
+                <td>We're planting! Come in and plant a 4" succulent with us. <em>While supplies last</em></td>
+                <td>8+</td>
+    
+              </tr>
+              <tr>
+                <td>April 10th</td>
+                <td>Succulent masterclass with Sam Lemon</td>
+                <td>This week we're learning how to propagate and graft.</td>
+                <td>16+</td>
+    
+              </tr>
+              <tr>
+                <td>April 17th 11am</td>
+                <td>Plant Therapy</td>
+                <td>Guided meditation in the quiet of our indoor garden.</td>
+                <td>18+</td>
+              </tr>
+              <tr>
+                <td>April 24th</td>
+                <td>Let's get Dirty!</td>
+                <td>Let's explore the sensory aspects of gardening and explore the world around us.</td>
+                <td>Kids of all ages</td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
+      </section>
+    
 
    
 <!--These scripts tell the computer what to download in order to apply Bootstrap and jquery to the file.-->
