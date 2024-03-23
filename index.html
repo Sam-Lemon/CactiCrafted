@@ -16,8 +16,8 @@
 <!--Here at the top of the page I linked my bootstrap stylesheet in the head element and I changed the background of the page to success-subtle. 
 I also have a navbar with a register button that links to my second page, a sign-in button, and a shopping basket icon. I used a navbar to create 
 this element instead of just using buttons so that assistive technology can identify it as navigation. 
-    -row-reverse
-    -navbar-collapse
+    -row-reverse (but buttons on right(end) side of container)
+    -navbar-collapse (groups navbar contents together within the parent breakpoint and hides them)
     -container vs container-fluid (fluid makes element fit the width of the viewport)
 The basket is a SVG file (Scalable Vector Graphics file) that I added into a button.-->
 
@@ -69,7 +69,8 @@ of the viewport when it's less than 350px.-->
 
 
 <!--This is a dropdown menu. I centered the content by changing the display to flex and using justify-content-center. I separated each dropdown button
-into it's own div that includes the main button (ex: Shop Succulents) and the dropdown options below it.-->
+into it's own div that includes the main button (ex: Shop Succulents) and the dropdown options below it. The aria-labelledby in the ul is referencing
+"dropdownMenuButton1" (the button above it) for it's accessible name. -->
 
 
     <section class="mid-nav-bar-dropdown">
@@ -200,7 +201,8 @@ and used text-end and text-start to line them up against the images.-->
 
 
     <section class="classes&events">
-        <div class="container-fluid row bg-success-subtle mb-5">
+        <div class="container-fluid bg-success-subtle mb-5">
+            <div class="row">
                 <div class="col-md-3 d-flex align-items-center">
                     <div class="garden-class">
                             <p class="text-end">Having trouble keeping your succulents and cactus alive? Join us for our monthly gardening club where we trade tips, plants, and camaraderie.</p>
@@ -231,6 +233,7 @@ and used text-end and text-start to line them up against the images.-->
                         Hours: <br> M-F 11am-9pm <br> 4920 W Treemont St. <br> Mainevill, CO</p>
                     </div>
                 </div>
+            </div>
         </div>
     </section>
 
@@ -238,7 +241,7 @@ and used text-end and text-start to line them up against the images.-->
 
 
 <!--I decided to make a table showcasing events happening in the next month at the store. I  used .container-fluid to make
-the table take up the width of the viewport and centered my .h2 using text-center. I striped the rows of my table for
+the table take up the width of the viewport and centered my h2 using text-center. I striped the rows of my table for
 easier reading, and colored them in the same scheme as everywhere else. scope="col" specifies that these table headers
 are headers for columns. You could also specify them as headers for rows or groups of columns/rows.-->
 
