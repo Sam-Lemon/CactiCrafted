@@ -19,14 +19,17 @@
       <td>#D1E7DD</td>
     </tr>
      <tr>
+      <td></td>
       <td>Secondary Color</td>
       <td>#198754</td>
     </tr>
     <tr>
+      <td></td>
       <td>Table Stripe</td>
       <td>#C7DBD2</td>
     </tr>
     <tr>
+      <td></td>
       <td>Text</td>
       <td>black</td>
     </tr>
