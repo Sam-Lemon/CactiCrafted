@@ -10,6 +10,8 @@
         <li>Elements should stack vertically when the window is small</li>
       </ul>
   </ul>
+  <h3>Project URL</h3>
+    <p>https://github.com/Sam-Lemon/CactiCrafted.git</p>
 
 
 
@@ -21,5 +23,5 @@
 
 
 
-https://github.com/Sam-Lemon/CactiCrafted.git
+
 
