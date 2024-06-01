@@ -25,6 +25,13 @@
       <li>Bootstrap</li>
     </ul>
 
+  <br>
+
+  <h3>Features</h3>
+    <ol>
+      <li>Dropdown Menu</li>
+      <li>Product cards</li>
+    </ol>
 
 
  
