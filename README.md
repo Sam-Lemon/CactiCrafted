@@ -25,7 +25,7 @@ Website must include:
 
 ### Links
 
-  - Solution URL:  
+  - Live URL: https://sam-lemon.github.io/CactiCrafted/ 
   - GitHub Page: https://github.com/Sam-Lemon/CactiCrafted
   - YouTube Video: https://www.youtube.com/watch?v=RqstZ_dS22c
 
