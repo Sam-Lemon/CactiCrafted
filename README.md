@@ -46,6 +46,7 @@ Website must include:
   Using Bootstrap for the first time was quite challenging but as I powered through it 
   began to click. It took me a minute to figure out how to make the navbar horizontal
   but eventually I landed on:
+  
     ```html
           <nav class="navbar navbar-expand bg-success navbar-light">
               <div class="container-fluid d-flex flex-row-reverse">
