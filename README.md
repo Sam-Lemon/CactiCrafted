@@ -49,7 +49,6 @@ Website must include:
     ```html
           <nav class="navbar navbar-expand bg-success navbar-light">
               <div class="container-fluid d-flex flex-row-reverse">
-    
     ```
   
   But the most important lesson of this project is that perserverance is key.
