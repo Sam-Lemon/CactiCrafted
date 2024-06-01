@@ -28,7 +28,6 @@ Website must include:
   - Solution URL:  
   - GitHub Page: https://github.com/Sam-Lemon/CactiCrafted
   - YouTube Video: https://www.youtube.com/watch?v=RqstZ_dS22c
-  - Live Site URL: https://github.com/Sam-Lemon/CactiCrafted.git
 
 
 ## My process
